@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #fcfcfc;
+            font-family: sans-serif;
+            position: relative; 
+        }
+        footer {
+            background: #111;
+            height: auto;
+            width: 100vw;
+            padding-top: 40px;
+            color: #fff;
+        }
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+        .footer-content p {
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: #cacdd2;
+        }
+        .footer-bottom {
+            background: #000;
+            width: 100vw;
+            padding: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+        .footer-bottom p {
+            float: left;
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .footer-bottom p a {
+            color: #44bae8;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .footer-bottom span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        .footer-menu {
+            float: right;
+        }
+        .footer-menu ul {
+            display: flex;
+        }
+        .footer-menu ul li {
+            padding-right: 10px;
+            display: block;
+        }
+        .footer-menu ul li a {
+            color: #cfd2d6;
+            text-decoration: none;
+        }
+        .footer-menu ul li a:hover {
+            color: #27bcda;
+        }
+        
+        .socials {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li {
+            margin: 0 10px;
+        }
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .socials a i {
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+        .socials a:hover i {
+            color: aqua;
+        }
+    
+        @media (max-width: 500px) {
+            .footer-menu ul {
+                display: flex;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        
+    </style>
+    
+
+
+
+    <title>Inicio</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="https://placehold.co/60x50/02ac89/FFF" alt="logotipo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./onboarding.html">On boarding </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./aboutus.html">
+                  Acerca de nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="./comments.html">Comentarios </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactanos.html">Contáctanos </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header>
+        <h1 class="ms-5">Plan de Estudios</h1>
+    </header>
+    
+    <div class="row container" >
+        <div class="col-12 col-md-4">
+            <button id="tsu" class="btn btn-outline-success"><i class="fa-solid fa-school"></i>  TSU</button>
+            
+            <div id="tsuContainer" class="card border-success mb-3 col-12 col-md-4 mt-3" style="min-width: -webkit-fill-available;">
+            </div>
+        </div>
+       
+        <div class="col-12 col-md-4">
+            <button id="ing" class="btn btn-outline-info"><i class="fa-solid fa-school"></i>  Ingenieria</button>
+            <div id="ingContainer" class="card border-info mb-3 col-12 col-md-4 mt-3" style="min-width: -webkit-fill-available;">
+                
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <button id="lic" class="btn btn-outline-danger"><i class="fa-solid fa-school"></i>  Licenciatura</button>
+            <div id="licContainer"  class="card border-danger mb-3 col-12 col-md-4 mt-3" style="min-width: -webkit-fill-available;">
+                
+            </div>
+            
+        </div>
+
+    
+
+    <div class="row">
+        <div class="col-12">
+            <div>
+                <img src="http://www.utez.edu.mx/images/2022/02/Portada-conocenos.png" class="img-fluid" height="550px" width="100%">
+            </div>
+            <br>
+            <h1 style="margin-left: 45px;">¿Quiénes somos?</h1>
+            <hr style="margin-left: 45px;margin-right: 45px;">
+            <div class="col-auto text-center" style="margin: 40px;">
+                <p>La Universidad Tecnológica Emiliano Zapata (UTEZ), es una Universidad pública creada en el año 2000 que 
+                    forma parte del Sistema Nacional de Universidades Tecnológicas de la SEP, cuyo innovador modelo ofrece 
+                    planes de estudio para formar Técnicas y Técnicos Superiores Universitarios e Ingenieros e Ingenieras 
+                    en sólo tres años ocho meses, generando profesionistas competentes con altos niveles tecnológicos para 
+                    dar respuesta a las necesidades de los sectores social y productivo de la región y del país.</p>
+            </div>
+            <h2 class="text-center" style="color: #3d6087;">Misión</h2>
+            <div class="col-auto text-center" style="margin: 40px;">
+                <p>
+                    Formar profesionistas competitivos, con capacidades tecnológicas y sentido humanista,
+                    a través de programas educativos pertinentes, incluyentes, con equidad y calidad, 
+                    comprometidos con el desarrollo sostenible, que realiza investigación tecnológica, 
+                    promueve la innovación y fomenta la vinculación con los sectores productivo, público y social,
+                    para contribuir a satisfacer las necesidades de la sociedad.
+                </p>
+            </div>
+            <h2 class="text-center" style="color: #3d6087;">Visión</h2>
+            <div class="col-auto text-center" style="margin: 40px;">
+                <p>
+                    Ser una institución de educación superior tecnológica, reconocida a nivel nacional e internacional
+                     por su calidad académica, que contribuye al desarrollo tecnológico,  mediante la innovación, 
+                     vinculación e investigación, y continuando con el compromiso de ser referente dentro del Subsistema
+                     de Universidades Tecnológicas y Politécnicas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Oferta Educativa</h1>
+    <br>
+    <div class="container">
+        <div style="text-align: center;">
+            <img src="http://www.utez.edu.mx/images/2018/feb/oferta/MODELO_EDUCATIVO_2-01.png" alt="Oferta Educativa UTEZ" class="img-fluid" height="550px"  style="max-width: 100%;" />
+        </div>
+    </div>
+    
+    <br>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    TSU - Técnico Superior Universitario
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Técnico Superior Universitario en Procesos Industriales área: Manufactura</li>
+                        <li>Técnologías de la Información área: Infraestructura de Redes Digitales</li>
+                        <li>Tecnologías de la Información área: Desarrollo de Software Multiplataforma</li>
+                        <li>Terapia Física área: Rehabilitación</li>
+                        <li>Terapia física área: Turismo de Salud y Bienestar</li>
+                        <li>Diseño digital área: Animación</li>
+                        <li>Administración área: Capital Humano</li>
+                        <li>Contaduría</li>
+                        <li>Diseño y moda industrial área: Producción</li>
+                        <li>Mantenimiento área: Industrial</li>
+                        <li>Mecatrónica área: Automatización</li>
+                        <li>Desarrollo de negocios área: Mercadotecnia</li>
+                        <li>Nanotecnología área: Materiales</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Ingeniería
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Ingeniería en Desarrollo y Gestión de Software</li>
+                        <li>Ingeniería en Redes Inteligentes y Ciberseguridad</li>
+                        <li>Ingeniería Industrial</li>
+                        <li>Ingeniería en Mecatrónica</li>
+                        <li>Ingeniería en Nanotecnología</li>
+                        <li>Ingeniería en Diseño Textil y Moda</li>
+                        <li>Ingeniería en Mantenimiento Industrial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Licenciatura
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Licenciatura en Terapia Física</li>
+                        <li>Licenciatura en Diseño Digital y Producción Audiovisual</li>
+                        <li>Licenciatura en Innovación de Negocios y Mercadotecnia</li>
+                        <li>Licenciatura en Gestión de Capital Humano</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+        <div class="row" >
+            <div class="col-12">
+                <div class="card" style="margin-top: 20px;">
+                    <div class="card-header">
+                        Contáctanos
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ubicación</h5>
+                        <p class="card-text">Av. Universidad Tecnológica No.1, Col. Palo Escrito, C.P. 62760,
+                            Emiliano Zapata, Morelos.</p>
+                        <h5 class="card-title">Teléfono</h5>
+                        <p class="card-text">(01 777) 3 68 11 65</p>
+                        <p class="card-text">Comunicate sin costo al : 01 800 050 UTEZ(8839)</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+        <footer>
+            <div class="footer-content">
+                <h3>Territorio de Calidad</h3>
+                <p><a href="#">Acerca de nosotros</a> | <a href="#">Política de privacidad</a> | <a href="#">Términos y condiciones</a> | <a href="#">Aviso legal</a> | <a href="#">Política de cookies</a> | <a href="#">Contacto</a></p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 </p>
+            </div>
+        </footer>
+        
+
+
+
+
+</body>
+<script>
+    const tsuButton =  document.getElementById("tsu");
+    tsuButton.addEventListener("click",()=>{
+        console.log()
+        document.querySelector("#tsuContainer").innerHTML = `
+            <div class="card-header bg-transparent border-success d-flex justify-content-between text-center"><i class="fa-solid fa-school"></i>  TSU <i class="fa-solid fa-xmark" onclick="closeTsu()" style="cursor : pointer"></i></div>
+                    <div class="card-body text-success">
+                        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 1</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 3</small></li>
+                            <li class="list-group-item"><small>Materia 4</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 3</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 3</small></li>
+                            <li class="list-group-item"><small>Integradora 1</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 5</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 3</small></li>
+                            <li class="list-group-item"><small>Integradora 2</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 6</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Periodo de Estadías</h5>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        `
+    })
+    const closeTsu = ()=>{
+        document.querySelector("#tsuContainer").innerHTML = "";
+    }
+
+    const ing = document.getElementById("ing");
+    ing.addEventListener( "click", () => {
+        document.querySelector("#ingContainer").innerHTML = `
+            <div class="card-header bg-transparent border-info d-flex justify-content-between text-center"><i class="fa-solid fa-school"></i>  Ingeniería <i class="fa-solid fa-xmark" onclick="closeIng()" style="cursor : pointer"></i></div>
+                <div class="card-body text-info">
+                    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 7</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 3</small></li>
+                            <li class="list-group-item"><small>Materia 4</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 9</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 4</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 10</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Integradora</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 11</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Periodo de Estadías</h5>
+                    </div>
+                  </div>
+             </div>
+        `;
+    })
+    
+
+    const closeIng = ()=>{
+        document.querySelector("#ingContainer").innerHTML = "";
+    }
+
+    const lic = document.getElementById("lic");
+    lic.addEventListener( "click", () => {
+        document.querySelector("#licContainer").innerHTML = `
+        <div class="card-header bg-transparent border-danger d-flex justify-content-between text-center"><i class="fa-solid fa-school"></i>  Ingeniería <i class="fa-solid fa-xmark" onclick="closeLic()" style="cursor : pointer"></i></div>
+            <div class="card-body text-danger">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 7</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 3</small></li>
+                            <li class="list-group-item"><small>Materia 4</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 9</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Materia 4</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 10</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Materias a cursar</h5>
+                      <div class="card-text">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><small>Materia 1</small></li>
+                            <li class="list-group-item"><small>Materia 2</small></li>
+                            <li class="list-group-item"><small>Integradora</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Cuatrimestre 11</div>
+                    <div class="card-body">
+                      <h5 class="card-title">Periodo de Estadías</h5>
+                    </div>
+                  </div>
+                  </div>
+        </div>
+        `;
+    });
+
+    const closeLic = ()=>{
+        document.querySelector("#licContainer").innerHTML = "";
+    }
+
+</script>
+</html>
